@@ -84,7 +84,7 @@ test('fixupSvgString should empty script tags', t => {
         .toString();
     const fixed = fixupSvgString(svgString);
     // Script tag should remain but have no contents.
-    t.notEqual(fixed.indexOf('<script></script>'), -1);
+    t.equals(fixed.indexOf('<script></script>'), 207);
     // The contents of the script tag (e.g. the alert) are no longer there.
     t.equals(fixed.indexOf('stuff inside'), -1);
     t.end();
@@ -96,7 +96,7 @@ test('fixupSvgString should empty script tags in onload', t => {
         .toString();
     const fixed = fixupSvgString(svgString);
     // Script tag should remain but have no contents.
-    t.notEqual(fixed.indexOf('<script></script>'), -1);
+    t.equals(fixed.indexOf('<script></script>'), 792);
     t.end();
 });
 
@@ -106,7 +106,7 @@ test('fixupSvgString strips contents of metadata', t => {
         .toString();
     const fixed = fixupSvgString(svgString);
     // Metadata tag should still exist, it'll just be empty.
-    t.notEqual(fixed.indexOf('<metadata></metadata>'), -1);
+    t.equals(fixed.indexOf('<metadata></metadata>'), 207);
     // The contents of the metadata tag are gone.
     t.equals(fixed.indexOf('stuff inside'), -1);
     t.end();
@@ -118,7 +118,7 @@ test('fixupSvgString strips contents of metadata in onload', t => {
         .toString();
     const fixed = fixupSvgString(svgString);
     // Metadata tag should still exist, it'll just be empty.
-    t.notEqual(fixed.indexOf('<metadata></metadata>'), -1);
+    t.equals(fixed.indexOf('<metadata></metadata>'), 800);
     t.end();
 });
 
