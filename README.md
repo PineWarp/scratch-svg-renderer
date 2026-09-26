@@ -1,4 +1,4 @@
-Fork of scratch-svg-renderer used by Bilup.
+Fork of scratch-svg-renderer used by PineWarp.
 
 ## License
 
@@ -22,7 +22,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 ```
 
 <!--
-# scratch-svg-renderer
+# scratch-svg-renderer 🍍
 [![CircleCI](https://circleci.com/gh/LLK/scratch-svg-renderer/tree/develop.svg?style=shield&circle-token=239172a1b9275ee1e8f949489e6e36ea57b7fc86)](https://circleci.com/gh/LLK/scratch-svg-renderer?branch=develop)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/LLK/scratch-svg-renderer.svg)](https://greenkeeper.io/)

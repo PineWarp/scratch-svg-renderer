@@ -1,7 +1,7 @@
 {
   "name": "@bilup/scratch-svg-renderer",
   "version": "1.0.0",
-  "description": "SVG renderer for Bilup",
+  "description": "SVG renderer for PineWarp",
   "main": "./src/index.js",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -14,10 +14,10 @@
     "watch": "webpack --progress --colors --watch"
   },
   "license": "MPL-2.0",
-  "homepage": "https://github.com/Bilup/scratch-svg-renderer#readme",
+  "homepage": "https://github.com/PineWarp/scratch-svg-renderer#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bilup/scratch-svg-renderer.git"
+    "url": "https://github.com/PineWarp/scratch-svg-renderer.git"
   },
   "peerDependencies": {
     "scratch-render-fonts": "github:Bilup/scratch-render-fonts#main"
